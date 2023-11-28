@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'EuropeExt';
+    src: url('font/EuropeExt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a { color: inherit; } 
+
+body {
+    position: relative; /* Add this to make z-index work */
+    background-image: url('img/bg.png');
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-size: cover; /* Cover the entire viewport */
+    font-family: 'EuropeExt';
+}
+
+/* Add a blur effect to the body */
+body:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: inherit;
+    background-size: cover;
+    filter: blur(8px); /* Adjust the blur strength as needed */
+    z-index: -1; /* Move the blurred background behind the content */
+}
+
+.datetext {
+    display: inline;
+    color: red;
+}
+
+.titletext {
+    font-size: 40px; /* Added 'px' to specify the unit for font size */
+    color: white;
+}
+
+.desctext {
+    color: white;
+    font-size: 30px;
+}
+
+.promo {
+    font-size: 35px; /* Added 'px' to specify the unit for font size */
+    color: white;
+    position: fixed;
+    width: 100%;
+    padding: 10px; /* Adjust the padding as needed for better visibility */
+}
+
+.servertextcontainer {
+    padding-top: 15%;
+    padding-left: 5%;
+    font-size: 60px; /* Added 'px' to specify the unit for font size */
+    color: white;
+}
+
+.serverstatus {
+    display: inline;
+}
+
+.statustext {
+    display: inline;
+    position: relative; /* Add this to make z-index work */
+    z-index: 1; /* Ensure the text is above the blurred background */
+}
