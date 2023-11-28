@@ -35,17 +35,17 @@ body:before {
 }
 
 .titletext {
-    font-size: 20px; /* Added 'px' to specify the unit for font size */
+    font-size: 40px; /* Added 'px' to specify the unit for font size */
     color: white;
 }
 
 .desctext {
     color: white;
-    font-size: 10px;
+    font-size: 30px;
 }
 
 .promo {
-    font-size: 15px; /* Added 'px' to specify the unit for font size */
+    font-size: 35px; /* Added 'px' to specify the unit for font size */
     color: white;
     position: fixed;
     width: 100%;
@@ -55,7 +55,7 @@ body:before {
 .servertextcontainer {
     padding-top: 15%;
     padding-left: 5%;
-    font-size: 40px; /* Added 'px' to specify the unit for font size */
+    font-size: 60px; /* Added 'px' to specify the unit for font size */
     color: white;
 }
 
